@@ -1,0 +1,14 @@
+{
+    "repository": {
+        "type": "git",
+        "url": "git+github.com/terminal42/contao-asset-reload.git"
+    },
+    "license": "proprietary",
+    "devDependencies": {
+        "@symfony/webpack-encore": "^0.16.0",
+        "script-loader": "^0.7.2"
+    },
+    "dependencies": {
+        "popsicle": "^9.2.0"
+    }
+}

@@ -1,0 +1,8 @@
+services:
+    Terminal42\AssetReloadBundle\Controller\ManifestJsonController:
+        arguments:
+            - ~ # path to manifest.json
+
+    Terminal42\AssetReloadBundle\EventListener\PageListener:
+        arguments: ["@assets.packages", "%kernel.debug%"]
+        tags: [{ name: contao.hook, hook: generatePage }]
